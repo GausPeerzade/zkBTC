@@ -1,0 +1,28 @@
+{
+  "name": "bitcoin-inscriptions-test",
+  "version": "1.0.0",
+  "description": "Bitcoin ordinals and rune inscription testing suite",
+  "main": "bitcoin-regtest.js",
+  "scripts": {
+    "test": "node bitcoin-regtest.js",
+    "test-functions-only": "node bitcoin-regtest.js --no-bitcoin",
+    "setup": "node setup.js",
+    "install-ord": "curl --proto '=https' --tlsv1.2 -fsLS https://ordinals.com/install.sh | bash"
+  },
+  "dependencies": {
+    "@scure/base": "^1.2.6",
+    "@scure/btc-signer": "^1.8.1",
+    "assert": "^2.1.0",
+    "axios": "^1.6.0",
+    "bitcoinjs-lib": "^6.1.5"
+  },
+  "keywords": [
+    "bitcoin",
+    "ordinals",
+    "runes",
+    "inscriptions",
+    "regtest"
+  ],
+  "author": "",
+  "license": "MIT"
+}
